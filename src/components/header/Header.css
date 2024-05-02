@@ -1,0 +1,16 @@
+header {
+	/* width: 100%; */
+	position: fixed;
+	height: 70px;
+	transition: all 0.7s cubic-bezier(0.165, 0.85, 0.45, 1) 0s;
+}
+
+.sticky_header {
+	z-index: 100;
+	background: rgb(255, 255, 255);
+}
+
+.animation {
+	/* width: 100%; */
+	transition: all ease 1s;
+}

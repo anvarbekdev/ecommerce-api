@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-next {
+	background-image: url("./assets/next.svg");
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.559);
+	border-radius: 50%;
+	padding: 0px 20px 0 20px;
+	background-size: 50%;
+	background-position: center;
+}
+.swiper-button-next::after {
+	display: none;
+}
+.overflow_hide {
+	overflow: hidden;
+}
+.swiper-button-prev {
+	background-image: url("./assets/prev.svg");
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.559);
+	border-radius: 50%;
+	padding: 0px 20px 0 20px;
+	background-size: 50%;
+	background-position: center;
+}
+.swiper-button-prev::after {
+	display: none;
+}
+
+.fixedFilter {
+	position: fixed;
+	width: 20%;
+	scrollbar-color: red rgb(129, 95, 32);
+	scrollbar-width: thin;
+}
+/* ::-webkit-scrollbar-thumb {
+	background: rgb(117, 31, 31);
+	border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+} */
+
+.customswip {
+	overflow: hidden;
+}
+.customswip .thumb_section .mySwiper {
+	/* width: 20%; */
+	margin-right: 0.7rem;
+	height: 100%;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+	border: 1.7px solid rgb(92, 88, 88);
+	border-radius: 2px;
+}
+.swiperss {
+	width: 100%;
+	height: 100%;
+}
+
+.swiperss .swiper-slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@layer base {
+	body {
+		@apply text-[#8a8d93] text-sm font-[400] bg-[#fff] leading-4;
+	}
+	ol {
+		@apply list-decimal;
+	}
+	ul {
+		@apply list-disc;
+	}
+	li {
+		@apply list-item;
+	}
+	img {
+		@apply inline-block;
+	}
+	iframe {
+		@apply inline-block max-w-sm;
+	}
+	.text {
+		@apply text-black font-[500];
+	}
+	.text2 {
+		@apply text-[#545556] font-medium;
+	}
+	.h2 {
+		@apply font-primary text-[32px] text-black tracking-[10%] uppercase;
+	}
+	.h3 {
+		@apply font-primary text-[24px] text-black tracking-[10%] uppercase;
+	}
+	.h4 {
+		@apply font-primary font-medium text-[18px] my-6 leading-[20px];
+	}
+	.h5 {
+		@apply font-primary font-medium text-[15px] text-[#eee] my-4 leading-[20px];
+	}
+	.btn {
+		@apply rounded-full font-primary text-white font-medium;
+	}
+	.btn-sm {
+		@apply h-[48px] px-6 text-sm;
+	}
+	.btn-lg {
+		@apply h-[56px] px-10 text-base;
+	}
+	.btn-link {
+		@apply text-base;
+	}
+	.text-gradient {
+		@apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+	}
+	.section {
+		@apply z-50 lg:px-8 sm:px-4 lg:h-screen sm:pt-12 md:h-full w-full sm:h-[300px] flex md:items-center sm:items-start;
+	}
+}
